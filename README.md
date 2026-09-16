@@ -1,5 +1,5 @@
 Pulsar Conformal Triage Pipeline
-A statistical systems software pipeline that applies Mondrian Conformal Prediction (CP) to high-throughput radio astronomy data streams. This architecture guarantees a class-conditional error bound ($1 - \alpha = 0.95$) to systematically triage pulsar telemetry, drastically reducing downstream computational infrastructure costs.
+A statistical systems software pipeline that applies Mondrian Conformal Prediction (CP) to high-throughput radio astronomy data streams. This architecture guarantees a class-conditional error bound to systematically triage pulsar telemetry, drastically reducing downstream computational infrastructure costs.
 
 The Problem
 Modern radio telescopes generate massive pipelines of candidate events, the vast majority of which are dead noise (RFI). Standard Machine Learning baselines (e.g., LightGBM) optimize for global accuracy, causing them to systematically drop rare minority-class signals (Pulsars) due to massive class imbalance (~1.3% positive class ratio).
